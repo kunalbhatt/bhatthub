@@ -1,0 +1,11 @@
+<div class="navbar-content">
+  <ul>
+    {% for post in site.posts %}
+      {% if post.title %}
+      <li>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
